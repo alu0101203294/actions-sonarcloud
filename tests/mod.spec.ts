@@ -1,6 +1,6 @@
 import 'mocha';
 import {expect} from 'chai';
-import {add} from "../src/mod";
+import {add} from "../src/mod.js";
 
 describe("add function tests", () => {
   it("add(1, 8) returns value 9", () => {
