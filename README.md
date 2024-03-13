@@ -1,4 +1,4 @@
-## SonarCloud 
+## Github Actions + SonarCloud + Coveralls
 ##### José Miguel Díaz González
 
 <p align="center">
