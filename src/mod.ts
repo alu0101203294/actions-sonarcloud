@@ -78,14 +78,14 @@ export class GenericObservable<T> implements Observable<T> {
  * Evento 3 recibido: TestEvento3
  * ```
  */
-class ExampleObserver<T> implements Observer<T> {
-  update(event: Event<T>): void {
+class ExampleObserver implements Observer<string> {
+  update(event: Event<string>): void {
     console.log(`Evento ${event.id} recibido:`, event.data);
   }
 }
 
 const observable: Observable<string> = new GenericObservable<string>();
-const observer: Observer<string> = new ExampleObserver<string>();
+const observer: Observer<string> = new ExampleObserver();
 
 
 observable.addObserver(observer);

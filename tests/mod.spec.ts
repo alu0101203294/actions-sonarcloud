@@ -69,9 +69,5 @@ describe('Observable', () => {
     
     expect(eventReceived).to.be.undefined;
   });
-
-
-
-
 });
 });
