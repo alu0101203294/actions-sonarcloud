@@ -78,7 +78,7 @@ export class GenericObservable<T> implements Observable<T> {
  * Evento 3 recibido: TestEvento3
  * ```
  */
-class ExampleObserver implements Observer<string> {
+export class ExampleObserver implements Observer<string> {
   update(event: Event<string>): void {
     console.log(`Evento ${event.id} recibido:`, event.data);
   }
